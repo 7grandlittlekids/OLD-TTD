@@ -1,4 +1,9 @@
---open src by FunnySad
+local args = {
+    [1] = "Hard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("VoteForMap"):FireServer(unpack(args))
+
 
 local player = game.Players.LocalPlayer -- สมมติว่าคุณใช้ LocalPlayer
 
